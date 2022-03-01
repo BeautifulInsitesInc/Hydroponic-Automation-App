@@ -1,10 +1,12 @@
 // listen for auth status changes
 auth.onAuthStateChanged(user => {
     if (user) {
-      console.log("user logged in");
+      console.log("user logged in like flinn");
       console.log(user);
       setupUI(user);
       var uid = user.uid;
+      //document.getElementById("user-id").textContent = uid;
+      //console.log("Just changed content");
       console.log(uid);
     } else {
       console.log("user logged out");
@@ -19,7 +21,7 @@ auth.onAuthStateChanged(user => {
     // get user info
     const email = loginForm['input-email'].value;
     const password = loginForm['input-password'].value;
-    // log the user in
+   // log the user in
     auth.signInWithEmailAndPassword(email, password).then((cred) => {
       // close the login modal & reset form
       loginForm.reset();

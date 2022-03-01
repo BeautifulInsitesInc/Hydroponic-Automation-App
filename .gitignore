@@ -23,4 +23,9 @@
 hs_err_pid*
 
 api/*
+.firebaserc
+.gitignore
+database.rules.json
+.firebase/*
+
 
